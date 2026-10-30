@@ -514,6 +514,13 @@ section ol {
   white-space: nowrap;
 }
 
+.honor-note {
+  flex-basis: 100%;
+  margin-top: 2px;
+  color: var(--color-text-secondary);
+  font-size: 0.86rem;
+}
+
 /* ---- 8. Evaluation ------------------------------------------------------ */
 .eval-list {
   display: grid;
