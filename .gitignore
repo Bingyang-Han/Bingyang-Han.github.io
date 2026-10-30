@@ -10,3 +10,6 @@ CLAUDE.md
 # Private source documents — never publish
 doc/
 *.pdf
+
+# Local image sources — new files here are not committed
+assets/images/
