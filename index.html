@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="韩冰洋 (Han Bingyang)" />
+    <meta
+      name="description"
+      content="韩冰洋（Han Bingyang）的个人主页 · 冈山大学文化人类学修士在读 / 岡山大学文化人類学修士課程在学中"
+    />
+    <title>韩冰洋 · Han Bingyang</title>
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+
+    <!-- Apply the saved theme before CSS loads to avoid a flash.
+         Language is not persisted: the page always opens in Chinese. -->
+    <script>
+      (function () {
+        var saved = localStorage.getItem("theme");
+        var prefersDark = window.matchMedia(
+          "(prefers-color-scheme: dark)",
+        ).matches;
+        if (saved === "dark" || (!saved && prefersDark)) {
+          document.documentElement.setAttribute("data-theme", "dark");
+        }
+      })();
+    </script>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Fixed top navigation. Keep the link order the same as the sections below. -->
+    <nav class="topnav">
+      <div class="nav-links">
+        <a href="#about"
+          ><span class="zh">个人简介</span><span class="ja">自己紹介</span></a
+        >
+        <a href="#research"
+          ><span class="zh">研究方向</span><span class="ja">研究テーマ</span></a
+        >
+        <a href="#education"
+          ><span class="zh">教育经历</span><span class="ja">学歴</span></a
+        >
+        <a href="#skills"
+          ><span class="zh">语言与技能</span><span class="ja">語学・スキル</span></a
+        >
+        <a href="#honors"
+          ><span class="zh">荣誉与证书</span><span class="ja">受賞・資格</span></a
+        >
+        <a href="#experience"
+          ><span class="zh">工作与实践</span><span class="ja">職務・実務経験</span></a
+        >
+        <a href="#evaluation"
+          ><span class="zh">个人评价</span><span class="ja">自己評価</span></a
+        >
+      </div>
+      <div class="corner-controls">
+        <button
+          id="lang-toggle"
+          class="icon-button"
+          aria-label="切换语言 / 言語切替"
+          title="中 / 日"
+        >
+          <span class="lang-zh">中</span>
+          <span class="lang-ja">日</span>
+        </button>
+        <button
+          id="theme-toggle"
+          class="icon-button"
+          aria-label="切换深色模式 / ダークモード切替"
+          title="Light / Dark"
+        >
+          <svg
+            class="icon-moon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+          <svg
+            class="icon-sun"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <circle cx="12" cy="12" r="5" />
+            <line x1="12" y1="1" x2="12" y2="3" />
+            <line x1="12" y1="21" x2="12" y2="23" />
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+            <line x1="1" y1="12" x2="3" y2="12" />
+            <line x1="21" y1="12" x2="23" y2="12" />
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <div class="container">
+      <!-- ============================ Profile header ============================ -->
+      <header class="profile">
+        <!-- Placeholder avatar: replace assets/images/avatar.png with a real photo -->
+        <img
+          class="avatar"
+          src="assets/images/avatar.png"
+          alt="韩冰洋 Han Bingyang"
+        />
+
+        <div class="profile-info">
+          <h1 class="name">
+            <span class="zh">韩冰洋</span><span class="ja">韓冰洋</span>
+            <span class="name-latin">Han Bingyang</span>
+          </h1>
+          <p class="affiliation">
+            <span class="zh"
+              >冈山大学 · 文化人类学<br />修士课程在读（2025.04 –
+              2027.06）</span
+            >
+            <span class="ja"
+              >岡山大学 · 文化人類学<br />修士課程在学中（2025.04 –
+              2027.06）</span
+            >
+          </p>
+          <ul class="contact">
+            <li>
+              <a href="mailto:henefossc0506@gmail.com"
+                >henefossc0506@gmail.com</a
+              >
+            </li>
+            <li>
+              <span class="zh">日本 · 冈山</span
+              ><span class="ja">日本・岡山</span>
+            </li>
+          </ul>
+        </div>
+      </header>
+
+      <!-- =============================== Sections ===============================
+        Each section is a shell; content lives in sections/*.html and is loaded
+        by js/main.js. To edit a section, edit its file under sections/. -->
+      <main>
+        <section id="about" data-include="sections/about.html"></section>
+        <section id="research" data-include="sections/research.html"></section>
+        <section
+          id="education"
+          data-include="sections/education.html"
+        ></section>
+        <section id="skills" data-include="sections/skills.html"></section>
+        <section id="honors" data-include="sections/honors.html"></section>
+        <section
+          id="experience"
+          data-include="sections/experience.html"
+        ></section>
+        <section
+          id="evaluation"
+          data-include="sections/evaluation.html"
+        ></section>
+      </main>
+
+      <footer>
+        <p>
+          <span class="zh">© 2026 韩冰洋 · 最后更新：2026.10</span>
+          <span class="ja">© 2026 韓冰洋 · 最終更新：2026.10</span>
+        </p>
+      </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
